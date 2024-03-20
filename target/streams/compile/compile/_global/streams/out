@@ -1,0 +1,55 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:1:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.flatspec.AnyFlatSpec[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:2:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.matchers.should.Matchers[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:4:34: not found: type AnyFlatSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass ClabeValidatorSpec extends AnyFlatSpec with Matchers {[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:4:51: not found: type Matchers[0m
+[0m[[0m[31merror[0m] [0m[0mclass ClabeValidatorSpec extends AnyFlatSpec with Matchers {[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:6:20: value should is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m  "ClabeValidator" should "validate a correct CLABE" in {[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:7:56: value shouldBe is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m    ClabeValidator.validateClabe("032180000118359719") shouldBe true[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:10:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "reject an incorrect CLABE" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:11:56: value shouldBe is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m    ClabeValidator.validateClabe("123456789012345678") shouldBe false[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:14:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "return the correct bank name for a given CLABE" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:15:54: value shouldBe is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m    ClabeValidator.getBankName("032180000118359719") shouldBe "Banco Santander"[0m
+[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:18:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "throw an exception for an invalid bank code" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:19:5: not found: value an[0m
+[0m[[0m[31merror[0m] [0m[0m    an[Exception] should be thrownBy ClabeValidator.getBankName("999180000118359719")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:19:26: not found: value be[0m
+[0m[[0m[31merror[0m] [0m[0m    an[Exception] should be thrownBy ClabeValidator.getBankName("999180000118359719")[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:22:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "compute the correct control digit for a given CLABE" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:23:62: value shouldBe is not a member of String[0m
+[0m[[0m[31merror[0m] [0m[0m    ClabeValidator.computeControlDigit("032180000118359719") shouldBe "9"[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:26:3: not found: value it[0m
+[0m[[0m[31merror[0m] [0m[0m  it should "detect if a string contains only digits" in {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:27:52: value shouldBe is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m    ClabeValidator.isANumber("032180000118359719") shouldBe true[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/pedrogonzalez/Projects/ClabeValidatorProject/src/main/scala/ClabeValidatorSpec.scala:28:44: value shouldBe is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m    ClabeValidator.isANumber("notanumber") shouldBe false[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m18 errors found[0m
